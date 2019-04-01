@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "'";
 
 
 
@@ -14,12 +13,13 @@ client.on('message', msg => {
 
     const args = msg.content.slice(prefix.length).split('-');
     const command = args.shift().toLowerCase();
+    const prefix = "'";
 
     console.log(args[0]);
 
     if (command === 'setprefix') {
         if (!args[0]) return;
-        prefix = `${args[0]}`;
+        const prefix = `${args[0]}`;
     }
 
     if (command === 'help') {
