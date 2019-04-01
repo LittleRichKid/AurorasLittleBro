@@ -26,7 +26,7 @@ client.on('message', msg => {
         .addField(`bulkdelete`, 'Removes x amount of messages in the selected channel.', false)
         .addField(`servers`, 'Tells you how many servers I exist in.', false);
 
-        msg.channel.send(embed)
+        msg.channel.send(embed);
 
         
     }
