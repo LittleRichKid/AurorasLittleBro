@@ -62,7 +62,7 @@ client.on('message', msg => {
         .setDescription(`${args[0]}`);
 
         msg.channel.send(rich);
-        msg.delete()
+        msg.delete();
     }
     
     console.log(`Args: ${args} Command: ${command}`);
