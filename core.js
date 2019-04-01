@@ -20,7 +20,7 @@ client.on('message', msg => {
     if (command === 'setprefix') {
         if (!args[0]) return;
         prefix = `${args[0]}`;
-        msg.channel.send(`Changed the prefix to ${prefix} for you!`)
+        msg.channel.send(`Changed the prefix to ${prefix} for you!`);
     }
 
     if (command === 'help') {
