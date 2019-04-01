@@ -21,8 +21,8 @@ client.on('message', msg => {
         const embed = new Discord.RichEmbed()
         .setAuthor(`${msg.author.username}`)
         .setTitle("Help")
-        .addField(`Prefix: ${prefix}`, 'Test', true)
-        .addField(`Pref: ${prefix}`, 'Tast', true);
+        .addField(`Prefix: ${prefix}`, 'Test', false)
+        .addField(`Pref: ${prefix}`, 'Tast', false);
 
         msg.channel.send(embed)
 
