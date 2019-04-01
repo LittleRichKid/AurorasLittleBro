@@ -55,7 +55,7 @@ client.on('message', msg => {
         msg.channel.send(`I deleted ${args[0]} message(s) fo you!`);
     }
 
-    if (command === 'sendbuild'){
+    if (command === 'vouch'){
         const rich = new Discord.RichEmbed()
         .setAuthor(`${msg.author.username}`)
         .setTitle("Vouch")
