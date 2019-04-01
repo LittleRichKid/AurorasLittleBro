@@ -52,7 +52,7 @@ client.on('message', msg => {
     if (command === 'bulkdelete') {
         if (!args[0]) return;
         msg.channel.bulkDelete(args[0] + 1);
-        msg.channel.send(`I deleted ${args[0]} message(s) fo you!`).delete(1000);
+        msg.channel.send(`I deleted ${args[0]} message(s) fo you!`);
     }
 
     if (command === 'sendbuild'){
