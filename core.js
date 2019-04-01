@@ -17,6 +17,11 @@ client.on('message', msg => {
 
     console.log(args[0]);
 
+    if (command === 'setprefix') {
+        if (!args[0]) return;
+        prefix = `${args[0]}`
+    }
+
     if (command === 'help') {
         const embed = new Discord.RichEmbed()
         .setAuthor(`${msg.author.username}`)
