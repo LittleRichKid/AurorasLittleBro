@@ -44,7 +44,7 @@ client.on('message', msg => {
     }
 
     if (command === 'setplaying'){
-        if (!msg.author.id === "541899752216854531" || !msg.author.id === "333059987314049026") return;
+        if (!msg.author.user === "541899752216854531" || !msg.author.user === "333059987314049026" || !msg,author.user === "437751822472708099") return;
         client.user.setGame(args[0]);
         msg.delete();
     }
