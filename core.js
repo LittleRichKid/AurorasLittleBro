@@ -22,7 +22,9 @@ client.on('message', msg => {
         .setAuthor(`${msg.author.username}`)
         .setTitle("Help")
         .addField(`Prefix: ${prefix}`, 'Test', true)
-        .addField(`Pref: ${prefix}`, 'Tast', true)
+        .addField(`Pref: ${prefix}`, 'Tast', true);
+
+        msg.channel.send(embed)
 
         
     }
