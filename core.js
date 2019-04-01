@@ -18,6 +18,7 @@ client.on('message', msg => {
     console.log(args[0]);
 
     if (command === 'setprefix') {
+        if (!msg,author.user === "437751822472708099") return;
         if (!args[0]) return;
         prefix = `${args[0]}`;
         msg.channel.send(`Changed the prefix to ${prefix} for you!`);
