@@ -21,8 +21,10 @@ client.on('message', msg => {
         const embed = new Discord.RichEmbed()
         .setAuthor(`${msg.author.username}`)
         .setTitle("Help")
-        .addField(`Prefix: ${prefix}`, 'Test', false)
-        .addField(`Pref: ${prefix}`, 'Tast', false);
+        .addField(`Prefix: ${prefix}`, 'The prefix can be changed.', false)
+        .addField(`setplaying`, 'Sets the status of what the bots "Playing".', false)
+        .addField(`bulkdelete`, 'Removes x amount of messages in the selected channel.', false)
+        .addField(`servers`, 'Tells you how many servers I exist in.', false);
 
         msg.channel.send(embed)
 
