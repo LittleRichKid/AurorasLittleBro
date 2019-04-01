@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "'";
+const prefix = "'"
 
 
 
@@ -14,7 +14,6 @@ client.on('message', msg => {
 
     const args = msg.content.slice(prefix.length).split('-');
     const command = args.shift().toLowerCase();
-    const prefix = "'";
 
     console.log(args[0]);
 
