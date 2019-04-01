@@ -17,6 +17,16 @@ client.on('message', msg => {
 
     console.log(args[0]);
 
+    if (command === 'help') {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(`${msg.author.username}`)
+        .setTitle("Help")
+        .addField(`Prefix: ${prefix}`, 'Test', true)
+        .addField(`Pref: ${prefix}`, 'Tast', true)
+
+        
+    }
+
     if (command === 'servers') {
         msg.channel.send(`I am currently in ${client.guilds.size} server(s)!`);
     }
